@@ -1,5 +1,5 @@
 // 차이(증감) 배열
-// difference array between values 
+// difference array between values
 // 차이(difference)/증감 배열은 바로 이전 데이터와의 차이 값을
 // 기록해 두었다가 사용하는 매우 간단한 방법이다. 만약 1, 3, 4, 2로
 // 4개의 데이터가 있었다면 이 데이터로 차이배열을 만들기 위해서는
