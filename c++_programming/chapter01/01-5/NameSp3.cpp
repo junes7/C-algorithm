@@ -12,7 +12,7 @@ namespace BestComImpl{
 namespace ProgComImpl{
     void SimpleFunc(void);
 }
-int main(){
+int main(void){
     BestComImpl::SimpleFunc();
 }
 void BestComImpl::SimpleFunc(void){
