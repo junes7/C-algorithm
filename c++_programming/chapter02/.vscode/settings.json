@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": "#EFDC05"
+    },
+    "json.schemas": [
+
+    
+    ]
+}
