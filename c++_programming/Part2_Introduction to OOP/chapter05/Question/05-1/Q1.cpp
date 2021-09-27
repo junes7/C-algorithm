@@ -27,20 +27,20 @@ private:
     int position;
 public:
     NameCard(char *_name,char *_company,char *_phone,int pos):position(pos){
-        name=new char[strlen(_name)+1];
-        company=new char[strlen(_company)+1];
-        phone=new char[strlen(_phone)+1];
-        strcpy(name,_name);
-        strcpy(company,_company);
-        strcpy(phone,_phone);
+        this->name=new char[strlen(_name)+1];
+        this->company=new char[strlen(_company)+1];
+        this->phone=new char[strlen(_phone)+1];
+        strcpy(this->name,_name);
+        strcpy(this->company,_company);
+        strcpy(this->phone,_phone);
     }
-    NameCard(const NameCard &copy):position(copy.position){
-        name=new char[strlen(copy.name)+1];
-        company=new char[strlen(copy.company)+1];
-        phone=new char[strlen(copy.phone)+1];
-        strcpy(name,copy.name);
-        strcpy(company,copy.company);
-        strcpy(phone,copy.phone);
+    NameCard(const NameCard &ref):position(ref.position){
+        name=new char[strlen(ref.name)+1];
+        company=new char[strlen(ref.company)+1];
+        phone=new char[strlen(ref.phone)+1];
+        strcpy(name,ref.name);
+        strcpy(company,ref.company);
+        strcpy(phone,ref.phone);
     }
     void ShowNameCardInfo(){
         cout<<"ÀÌ¸§: "<<name<<endl;
