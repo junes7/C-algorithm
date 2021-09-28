@@ -6,7 +6,7 @@ private:
 public:
     SoSimple(){
         simObjCnt++;
-        cout<<simObjCnt<<"¹øÂ° SoSimple °´Ã¼"<<endl;
+        cout<<simObjCnt<<"©ö©ª?¡Æ SoSimple ¡Æ¢¥?¨ù"<<endl;
     }
 };
 int SoSimple::simObjCnt=0;

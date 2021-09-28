@@ -3,6 +3,7 @@
 using namespace std;
 class SoSimple{
 public:
+    // public으로 선언이 되면, 클래스의 이름을 이용해서 호출이 가능하다.
     static int simObjCnt;
 public:
     SoSimple(){
