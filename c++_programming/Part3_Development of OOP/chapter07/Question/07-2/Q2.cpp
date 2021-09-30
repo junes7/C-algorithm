@@ -18,6 +18,10 @@ public:
         cout<<"ISBN: "<<isbn<<endl;
         cout<<"가격: "<<price<<endl;
     }
+    ~Book(){
+        delete []title;
+        delete []isbn;
+    }
 };
 class EBook:public Book{
 private:
@@ -30,6 +34,9 @@ public:
     void ShowEBookInfo() const{
         ShowBookInfo();
         cout<<"인증키: "<<DRMKey<<endl;
+    }
+    ~EBook(){
+        delete []DRMKey;
     }
 };
 int main(void){
