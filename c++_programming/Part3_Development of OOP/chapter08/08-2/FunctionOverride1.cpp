@@ -25,4 +25,5 @@ int main(void){
     sptr->SecondFunc();
 
     fptr->FirstFunc();
+    delete tptr;
 }
