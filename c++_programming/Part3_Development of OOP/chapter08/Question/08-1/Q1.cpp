@@ -80,11 +80,11 @@ private:
 public:
     EmployeeHandler():empNum(0){}
     void AddEmployee(Employee *emp){empList[empNum++]=emp;}
-    void ShowAllSalaryInfo(){
+    void ShowAllSalaryInfo() const{
         for(int i=0;i<empNum;i++)
             empList[i]->ShowSalaryInfo();
     }
-    void ShowTotalSalary(){
+    void ShowTotalSalary() const{
         int s=0;
         for(int i=0;i<empNum;i++)
             s+=empList[i]->GetPay();
@@ -107,4 +107,7 @@ int main(void){
     fseller3->AddSalesResult(7000);
     handler.AddEmployee(fseller3);
     handler.ShowAllSalaryInfo();
+    delete fseller1;
+    delete fseller2;
+    delete fseller3;
 }
