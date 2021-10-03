@@ -1,18 +1,19 @@
+// 다중상속의 모호성(Ambiguous of Multi Inheritance)
 #include<iostream>
 using namespace std;
 class BaseOne{
 public:
-    void SimpleFuncOne(){cout<<"BaseOne"<<endl;}
+    void SimpleFunc() const{cout<<"BaseOne"<<endl;}
 };
 class BaseTwo{
 public:
-    void SimpleFuncTwo(){cout<<"BaseTwo"<<endl;}
+    void SimpleFunc() const{cout<<"BaseTwo"<<endl;}
 };
 class MultiDerived:public BaseOne,protected BaseTwo{
 public:
     void ComplexFunc(){
-        SimpleFuncOne();
-        SimpleFuncTwo();
+        BaseOne::SimpleFunc();
+        BaseTwo::SimpleFunc();
     }
 };
 int main(void){
