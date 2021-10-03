@@ -9,7 +9,7 @@ public:
     First(char *ptr){
         strOne=new char[strlen(ptr)+1];
     }
-    ~First(){
+    virtual ~First(){
         cout<<"~First()"<<endl;
         delete []strOne;
     }
