@@ -28,7 +28,7 @@ Point& operator--(Point &ref){
     return ref;
 }
 const Point operator--(Point &ref,int){
-    const Point retobj(ref.xpos,ref.ypos);
+    const Point retobj(ref);
     ref.xpos-=1;
     ref.ypos-=1;
     return retobj; 
